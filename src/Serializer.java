@@ -19,11 +19,12 @@ public class Serializer {
     private void serializeObject(Object obj) {
         Integer id = getOrCreateId(obj);
 
-        Element objElement = createObjectElement(obj, id);
-
         if (obj.getClass().isArray()) {
             objElement = serializeArray(obj);
         }
+        Element objElement = createObjectElement(obj, id);
+
+
 
 
     }
