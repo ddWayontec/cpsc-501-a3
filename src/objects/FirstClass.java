@@ -5,13 +5,16 @@ public class FirstClass {
     private SecondClass secondClass;
     private int intVar;
 
-    public FirstClass() {
-        secondClass = new SecondClass();
+    public FirstClass(SecondClass secClass) {
+        secondClass = secClass;
     }
 
     public FirstClass(int newInt) {
-        secondClass = new SecondClass();
         intVar = newInt;
+    }
+
+    public FirstClass() {
+
     }
 
     public void setIntVar(int newInt) {
