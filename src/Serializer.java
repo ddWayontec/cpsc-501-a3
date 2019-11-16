@@ -22,10 +22,13 @@ public class Serializer {
         Element objElement = createObjectElement(obj, id);
 
         if (obj.getClass().isArray()) {
-            objElement
+            objElement = serializeArray(obj);
         }
 
 
+    }
+
+    private Element serializeArray(Object obj) {
     }
 
     private Element createObjectElement(Object obj, Integer id) {
